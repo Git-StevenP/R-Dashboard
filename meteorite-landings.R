@@ -52,7 +52,7 @@ sidebar <- dashboardSidebar(
                 label = "Date",
                 min = 0,
                 max = 2020,
-                value = 2000
+                value = 1900
     )
   )
 )
@@ -68,8 +68,8 @@ body <- dashboardBody(
                   )
                 ),
                 fluidRow(
-                  column(width = 10, offset="1"
-                    #leafletOutput("map4_dashboard", height = 270)
+                  column(width = 10, offset="1",
+                      leafletOutput("map4_dashboard", height = 270)
                   )
                 )
               ),
@@ -83,8 +83,8 @@ body <- dashboardBody(
                   )
                 ),
                 fluidRow(
-                  column(width = 10, offset="1"
-                    #leafletOutput("map2_dashboard", height = 270)
+                  column(width = 10, offset="1",
+                    leafletOutput("map2_dashboard", height = 270)
                   )
                 )
               ),
@@ -97,8 +97,8 @@ body <- dashboardBody(
                   )
                 ),
                 fluidRow(
-                  column(width = 10, offset="1"
-                    #leafletOutput("map1_dashboard", height = 270)
+                  column(width = 10, offset="1",
+                    leafletOutput("map1_dashboard", height = 270)
                   )
                 )
               ),
@@ -111,8 +111,8 @@ body <- dashboardBody(
                   )
                 ),
                 fluidRow(
-                  column(width = 10, offset="1"
-                    #leafletOutput("map_dashboard", height = 270)
+                  column(width = 10, offset="1",
+                    leafletOutput("map_dashboard", height = 270)
                   )
                 )
               ),
@@ -125,8 +125,8 @@ body <- dashboardBody(
                   )
                 ),
                 fluidRow(
-                  column(width = 10, offset="1"
-                    #leafletOutput("map3_dashboard", height = 270)
+                  column(width = 10, offset="1",
+                    leafletOutput("map3_dashboard", height = 270)
                   )
                 )
               )
@@ -199,7 +199,7 @@ body <- dashboardBody(
               )
             ),
             fluidRow(
-              #leafletOutput("map4_analysis")
+              leafletOutput("map4_analysis")
             ),
             fluidRow(
               class = "text-center",
@@ -215,7 +215,7 @@ body <- dashboardBody(
               )
             ),
             fluidRow(
-              #leafletOutput("map2_analysis")
+              leafletOutput("map2_analysis")
             ),
             fluidRow(
               class = "text-center",
@@ -231,7 +231,7 @@ body <- dashboardBody(
               )
             ),
             fluidRow(
-              #leafletOutput("map1_analysis")
+              leafletOutput("map1_analysis")
             ),
             fluidRow(
               class = "text-center",
@@ -272,7 +272,7 @@ body <- dashboardBody(
               )
             ),
             fluidRow(
-              #leafletOutput("map_analysis")
+              leafletOutput("map_analysis")
             ),
             fluidRow(
               class = "text-center",
@@ -348,7 +348,7 @@ body <- dashboardBody(
               )
             ),
             fluidRow(
-              #leafletOutput("map3_analysis")
+              leafletOutput("map3_analysis")
             ),
             fluidRow(
               class = "text-center",
