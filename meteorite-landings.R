@@ -47,9 +47,9 @@ sidebar <- dashboardSidebar(
         menuSubItem("Mean mass per class", tabName = "meanMassPerClass")
       )
     ),
-    menuItem("Analysis", icon = icon("bar-chart-o"), tabName = "analysis"),
+    menuItem("Analysis", icon = icon("bar-chart-o"), tabName = "analysis", badgeLabel = "Best with year = 1800", badgeColor = "green"),
     sliderInput(inputId = "date",
-                label = "Date",
+                label = "Year",
                 min = 0,
                 max = 2020,
                 value = 1900
